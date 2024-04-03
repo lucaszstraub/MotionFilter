@@ -4,7 +4,6 @@ subtractor = cv.createBackgroundSubtractorMOG2(200,50)    #Identifica o objeto q
 
 while True:
     ret, frame = video.read()
-    
     if ret:
         #Visualize it
         mask = subtractor.apply(frame)
